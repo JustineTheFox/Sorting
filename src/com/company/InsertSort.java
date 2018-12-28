@@ -19,10 +19,10 @@ public class InsertSort {
         for (int i = 0; i < tabToSort.length; i++) {
             for (int j = i; j > 0; j--) {
 
-                if (tabToSort[j] < tabToSort[j - 1]) {   // jesli kolejna liczba ktora sprawdzamy jest mniejsza od poprzedniej z tabeli [j - 1]
-                    current = tabToSort[j];              //to przypisujemy ją do tymczasowej zmiennej <current>
-                    tabToSort[j] = tabToSort[j - 1];     // ta liczba zostaje przypisana do pozycji o jeden mniejszej -> przesuwamy ja o jeden do tylu
-                    tabToSort[j - 1] = current;         // liczba ta teraz zostaje
+                if (tabToSort[j] < tabToSort[j - 1]) {  
+                    current = tabToSort[j];             
+                    tabToSort[j] = tabToSort[j - 1];      
+                    tabToSort[j - 1] = current;         
                 }
             }
         }
